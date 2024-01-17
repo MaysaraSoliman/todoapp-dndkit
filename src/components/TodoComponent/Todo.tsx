@@ -8,11 +8,7 @@ import {
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-type TTodo = {
-  id: number;
-  text: string;
-  completed: boolean;
-};
+import { TTodo } from "../../types/types";
 
 const SortableTodo = ({ todo }: { todo: TTodo }) => {
   const { attributes, listeners, setNodeRef, transform, transition } =
